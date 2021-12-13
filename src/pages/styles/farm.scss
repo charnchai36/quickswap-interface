@@ -1,0 +1,56 @@
+@use 'styles/variables' as *;
+@use 'styles/breakpoints' as *;
+
+.farmsWrapper {
+  background: $bgPalette;
+  border-radius: 20px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  @include media('screen', '<phone') {
+    padding: 24px 16px;
+  }
+}
+
+.farmListHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.farmRewards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  border-radius: 10px;
+  padding: 12px 0;
+  background-color: $secondary2;
+}
+
+.v3-farm-tabs-wrapper {
+  padding: 0 16px;
+  border-bottom: 1px solid $secondary3;
+  & .customTabWrapper {
+    margin-bottom: -2px;
+  }
+}
+
+a.button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: $primary;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 38px;
+  & p {
+    margin-left: 4px;
+  }
+}
+
+a.button:hover {
+  opacity: 0.9
+}

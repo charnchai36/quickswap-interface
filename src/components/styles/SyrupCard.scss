@@ -1,0 +1,94 @@
+@use 'styles/variables' as *;
+@use 'styles/breakpoints' as *;
+
+.syrupCard {
+  background: $secondary1;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 24px;
+  & .dailyRateWrapper {
+    margin-bottom: 0;
+    margin-top: 16px;
+    @include media("screen", "<phone") {
+      margin-top: 6px;
+    }
+  }
+}
+.syrupSponsoredCard {
+  border: 1px solid $yellow6;
+  background: $purple2;
+  position: relative;
+  overflow: hidden;
+  p, small {
+    color: $grey29;
+    &.text-success {
+      color: $successMain;
+    }
+  }
+  .syrupLPCardUp {
+    background: transparent;
+  }
+}
+.syrupSponsorTag {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 7px;
+  color: $black1;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: $yellow6;
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+.syrupSponsoredLink {
+  height: 28px;
+  background: $purple1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 16px;
+  a {
+    color: $primary;
+    text-decoration: none;
+    margin-left: 4px;
+  }
+}
+.syrupCardContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  cursor: pointer;
+}
+.syrupText {
+  font-size: 14px;
+  font-weight: 600;
+  color: $textSecondary,
+}
+.syrupButton {
+  background-image: linear-gradient(280deg, $green1 0%, $blue3 0%, $blue2 10%, $blue1 100%);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 134px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media("screen", "<phone") {
+    width: 49%;
+  }
+}
+
+.syrupAPR {
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}

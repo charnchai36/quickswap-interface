@@ -1,0 +1,31 @@
+@use 'styles/variables' as *;
+@use 'styles/breakpoints' as *;
+
+.headingItem {
+  cursor: pointer;
+  display: flex
+}
+
+.liquidityText {
+  color: $textSecondary;
+  & small {
+    color: $primary;
+    cursor: pointer;
+  }
+}
+
+.noLiquidityImage {
+  max-width: 286px;
+  width: 80%;
+  filter: grayscale(1)
+}
+
+.v3-manage-v2liquidity-button {
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 18px;
+  background-color: $primaryLight;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
